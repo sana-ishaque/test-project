@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="admin-page.css">
+</head>
+
+<body>
+    <h1>Admin Panel</h1>
+    <div id="wrapper">
+        <div id="task">
+            <form id="add-task-form">
+                <input type="text" name="task" placeholder="enter task">
+                <input type="text" name="description" placeholder="enter description">
+                <button class="btn btn-primary">Add Task</button>
+            </form>
+            <p>Tasks</p>
+            <ul id="tasks-list"></ul>
+        </div>
+        <div id="user">
+            <form id="add-user-form">
+                <input type="text" name="email" placeholder="enter you email">
+                <input type="password" name="password" placeholder="enter password">
+                <button class="btn btn-primary">Add user</button>
+            </form>
+            <p>Users</p>
+            <ul id="user-list"></ul>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+    <script>
+        // TODO: Replace the following with your app's Firebase project configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBpg-h46g6iVPySi4R1Wow6DzBO_LiQAVo",
+            authDomain: "test-project-82656.firebaseapp.com",
+            databaseURL: "https://test-project-82656.firebaseio.com",
+            projectId: "test-project-82656",
+            storageBucket: "test-project-82656.appspot.com",
+            messagingSenderId: "538262922772",
+            appId: "1:538262922772:web:8f8194fb8eba23801d2901",
+            measurementId: "G-SEP905WY5R"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        // db.settings({ timestampsInSnapshots: true });
+    </script>
+    <script src="admin-page.js"></script>
+
+</body>
+
+</html>

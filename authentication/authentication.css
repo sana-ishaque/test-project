@@ -1,0 +1,17 @@
+#user, #admin{
+    width: 20%;
+    margin: 1rem auto;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 98vh;
+}
+
+#adminForm{
+    width: 60%;
+    margin: auto;
+}

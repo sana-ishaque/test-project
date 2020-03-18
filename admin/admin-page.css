@@ -1,0 +1,52 @@
+body {
+    margin: 40px;
+    height: 100vh;
+}
+
+span {
+    display: block;
+}
+
+li {
+    list-style: none;
+    background-color: #f0f3f5;
+    max-width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.del {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+ul {
+    padding: 0px;
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+h1 {
+    font-family: monospace;
+    letter-spacing: 1px;
+    margin-bottom: 3em;
+}
+
+input {
+    padding: 3.5px;
+    border-style: groove;
+    border-radius: 4px;
+    outline: none;
+    margin-right: 5px;;
+}
+
+#wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
