@@ -1,6 +1,10 @@
 body {
-    margin: 40px;
-    height: 100vh;
+    /* margin: 40px; */
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 span {
@@ -34,7 +38,7 @@ form {
 h1 {
     font-family: monospace;
     letter-spacing: 1px;
-    margin-bottom: 3em;
+    margin: 35px 0px;
 }
 
 input {
