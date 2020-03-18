@@ -44,3 +44,8 @@ body {
 .shadow {
     box-shadow: 0 .5rem 1rem rgb(114,108,168)!important;
 }
+
+h1{
+    margin-bottom: 1em;
+    color: #007bff;
+}
