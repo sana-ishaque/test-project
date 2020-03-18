@@ -29,13 +29,13 @@ const userForm = document.querySelector("#userForm");
 
 userForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const email = adminForm.userEmail.value;
-    const password = adminForm.userPassword.value;
+    const email = userForm.userEmail.value;
+    const password = userForm.userPassword.value;
 
     firebase.auth().signInWithEmailAndPassword(email, password).then(() => {
         firebase.auth().onAuthStateChanged(user => {
             if (user) {
-                window.location = '../admin/'; //After successful login, user will be redirected to admin-page.html
+                window.location = '../admin/taskList.html'; //After successful login, user will be redirected to admin-page.html
             }
         });
         console.log('signed in');
