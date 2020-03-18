@@ -35,7 +35,7 @@ userForm.addEventListener('submit', (e) => {
     firebase.auth().signInWithEmailAndPassword(email, password).then(() => {
         firebase.auth().onAuthStateChanged(user => {
             if (user) {
-                window.location = '../admin/taskList.html'; //After successful login, user will be redirected to admin-page.html
+                window.location = '/admin/taskList.html'; //After successful login, user will be redirected to taskList.html
             }
         });
         console.log('signed in');
