@@ -1,17 +1,46 @@
-#user, #admin{
-    width: 20%;
-    margin: 1rem auto;
+#user, #admin {
+    /* width: 16%;
+    margin: 1rem auto; */
+    width: 45%;
+    margin: 1rem;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     height: 98vh;
 }
 
-#adminForm{
+#adminForm {
     width: 60%;
-    margin: auto;
+    /* margin: auto; */
+}
+
+.box {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eaeaea;
+}
+
+.box:after {
+    content: ' ';
+    border-top: 100vh solid #242021;
+    border-right: 100vw solid transparent;
+    width: 0;
+    position: absolute;
+}
+
+.wrapper {
+    height: 40%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    justify-content: center;
+    align-items: center;
+}
+.shadow {
+    box-shadow: 0 .5rem 1rem rgb(114,108,168)!important;
 }
